@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const port = process.env.PORT || 3030;
 
 app.use(express.static("public"));
 
@@ -16,6 +17,6 @@ app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/login.html"))
 })
 
-app.listen(3030, () => {
-    console.log("Servidor escuchando en el puerto 3030");
+app.listen(port, () => {
+    console.log('Servidor escuchando en el puerto ${port}');
 });
