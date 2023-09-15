@@ -1,0 +1,590 @@
+* {
+    font-family: roboto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.main-header{
+    position: fixed;
+    box-shadow: 1px 1px 5px gray;
+    background-color: #EAC926;
+    top: 0;
+    z-index: 100;
+    padding: 0 0 20px 0;
+    width: 100%;
+}
+
+.main-header .imagen-banner{
+    display: none;
+}
+
+.header-box{
+    margin: 20px 20px 0 20px;
+}
+
+.main-header-first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+    animation: aumentar 1s ease-in infinite normal;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    background-color: #ffff;
+    border-radius: 12px;
+}
+.header-search input{
+    height: 50px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.header-search a{
+    color: #111;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    height: 100%;
+    font-size: 150%;
+    outline: none;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+}
+
+.main-header-navbar {
+    display: none;
+}
+
+.main-header-navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-header-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: 25vh;
+    background-image: url(/images/img-home-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hamburger-button{
+    display: block;
+    background-color: #1259c3;
+    color: #ffff;
+    max-width: 50px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: auto;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 230px;
+}
+
+.main-subsection{
+    margin: 0px;
+}
+
+.articles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.articles article {
+    position: relative;
+    margin: 10px;
+    background-color: #ffff;
+    width: 100%;
+}
+
+.title-mobile:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.title-mobile{
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffff;
+    margin: 0px;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.img-container{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.img-container img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.product-info {
+    display: none;
+    padding: 4%;
+    width: 100%;
+}
+
+.product-info p {
+    font-weight: lighter;
+}
+
+.product-info i {
+    color: #39b54a;
+}
+
+.product-info .description {
+    color: #666;
+    margin-top: 5%;
+}
+
+.product-info .discount {
+    color: #39b54a;
+}
+.discount,
+.description{
+    font-size: 16px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    padding: 2% 2% 0 2%;
+    flex-wrap: wrap;
+}
+
+footer i{
+    color: #1259c3;
+}
+
+footer h3{
+    font-size: 1rem;
+    padding: 2% 0 1% 0;
+}
+
+.item-footer{
+    width: 33%;
+    text-align: center;
+    padding: 0 2% 0 0;
+}
+
+.footer-info{
+    padding: 2% 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.create-form{
+    padding: 20px 15px;
+}
+
+
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    display: block;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.control{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+/* ESTILOS REGISTER.HTML */
+
+.formulario-regis{
+    margin: 20px auto;
+    width: 90%;
+    padding-top: 4.5%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0px 1px 15px gray;
+}
+
+.input-grupo {
+    margin: auto;
+    width: 90%;
+}
+
+.input-grupo label {
+    display: inline-block;
+}
+
+form label{
+    font-size: 16px;
+}
+
+.font-weight {
+    font-weight: lighter;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.text{
+    width: 100%;
+    height: 30px;
+}
+
+.input-grupo input, .input-grupo label {
+    margin-bottom: 10px;
+}
+
+.input-btn {
+    border: 1px solid #707070;
+    padding: 5px;
+    margin: 5px 5px 0px 0px;
+    box-shadow: 1px 1px 1px #707070;
+}
+
+/* ESTILOS LOGIN.HTML */
+
+#login{
+    width: 100%;
+}
+
+.login-form{
+    width: 100%;
+    background-color: #c7c7c7;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.input-btn-login{
+    width: 100%;
+    padding: 2.5%;
+    background-color: #1259c3;
+    color: #ffff;
+    font-weight: lighter;
+}
+
+.input-grupo-login{
+    width: 100%;
+}
+
+.input-grupo-login input {
+    width: 100%;
+    padding: 2.5%;
+}
+
+
+@media(min-width: 480px) {
+    article .product-info{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+
+    article .product-info{
+        display: inline-block;
+    }
+    nav {
+        display: block;
+    }
+
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .copy-header{
+        font-weight: 400;
+        margin: 10px;
+        display: inline-block;
+        width: 35%;
+        text-align: right;
+    }
+
+    .hamburger-button{
+        display: none;
+    }
+
+    .main-header-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-navbar ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-header-navbar li {
+        margin: 0 5px;
+    }
+
+    main section article {
+        position: relative;
+    }
+
+    main section article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 10%;
+        bottom: 17%;
+    }
+    .header-search{
+        position: relative;
+        width: 100%;
+    }
+    .header-search input{
+        width: 100%;
+    }
+    .header-search a {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        padding: 5px;
+        border: none;
+        right: 2.5%;
+    }
+    .articles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .articles article {
+        width: 40%;
+        border-radius: 5px;
+    }
+
+    .price-discount{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .price{
+        width: 30%;
+        font-size: 1em;
+    }
+
+    .discount{
+        width: 70%;
+        font-size: 0.9em;
+    }
+
+    /* ESTILOS REGISTER.HTML */
+    .formulario-regis{
+        width: 70%;
+        padding-top: 3.5%;
+    }
+
+    .input-grupo{
+        width: 90%;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+    .font-weight {
+        font-weight: lighter;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    .text{
+        width: 100%;
+        height: 40px;
+    }
+    .input-btn {
+        font-size: 1.2rem;
+    }
+
+    /* ESTILOS LOGIN.HTML */
+    .login-form{
+        height: 50vh;
+    }
+
+    .input-grupo-login input {
+        padding: 2%;
+    }
+} 
+
+@media(min-width: 1200px){
+    .logo{
+        width: 250px;
+    }
+
+    .main-header-top-bar, .main-header-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+    }
+
+    .main-header-navbar{
+        margin-top: 20px;
+    }
+    .main-header-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-header-navbar a {
+        font-size: 20px;
+    }
+
+    .articles article {
+        width: 23%;
+        transition: all 1s;
+    }
+
+    .articles article:hover{
+        box-shadow: 0px 5px 20px gray;
+    }
+
+    /* ESTILOS REGISTER.HTML */
+    .formulario-regis{
+        width: 60%;
+        padding-top: 2.5%;
+    }
+
+    form label {
+        font-size: 20px;
+    }
+    .font-weight {
+        font-weight: lighter;
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+    .text{
+        width: 100%;
+        height: 45px;
+    }
+
+    /* ESTILOS LOGIN.HTML */
+    .login-form{
+        height: 70vh;
+    }
+
+    .login-form input{
+        font-size: 1.2rem;
+    }
+
+    .input-grupo-login {
+        width: 80%;
+    }
+    .input-grupo-login input {
+        padding: 1.5%;
+    }
+
+    .input-btn-login{
+        padding: 1%;
+        width: 80%;
+    }
+}
