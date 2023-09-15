@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
-const app = express();
 const port = process.env.PORT || 3030;
+const app = express();
 
-app.use(express.static("public"));
+app.use(express.static(publicPath));
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "./views/home.html"));
 });
 
