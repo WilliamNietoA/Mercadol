@@ -17,6 +17,4 @@ app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/login.html"))
 })
 
-app.listen(port, () => {
-    console.log('Servidor escuchando en el puerto ${port}');
-});
+app.listen(port, () => console.log('Servidor corriendo ML-' + port)); 
